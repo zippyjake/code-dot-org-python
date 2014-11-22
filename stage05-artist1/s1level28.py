@@ -9,8 +9,13 @@ import sys
 sys.path.append('..')
 import codestudio
 artist = codestudio.load('s1level28')
+a = artist
 
 for count in range(3):
-    pass                                         # ???
+    a.fd(100)
+    a.right(120)
+for count in range(4):
+    a.fd(100)
+    a.right(90)
 
 artist.check()

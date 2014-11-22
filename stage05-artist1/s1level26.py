@@ -9,8 +9,11 @@ import sys
 sys.path.append('..')
 import codestudio
 artist = codestudio.load('s1level26')
+a = artist
+a.speed = "fastest"
 
 for count in range(4):
-    pass                                         # ???
+    a.forward(100)
+    a.right(90)
 
 artist.check()
