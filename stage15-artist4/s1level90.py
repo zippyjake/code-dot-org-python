@@ -13,16 +13,30 @@ z = codestudio.load('s1level90')
 def draw_square(length):
     for count in range(4):
         z.move_forward(length)
-        z.turn_right(90)
+        z.turn_left(90)
 
 def draw_triangle(length):
-    for count in range(3):
+    for count in range(2):
         z.move_forward(length)
         z.turn_right(120)
-
+    
 def draw_house(length):
-    pass
+    z.fd(length)
+    z.right(30)
+    draw_triangle(length)
+    draw_square(length)
 
-# ???
+draw_house(50)
+z.left(90)
+z.fd(50)
+z.left(180)
+draw_house(100)
+z.left(90)
+z.fd(100)
+z.left(180)
+draw_house(150)
+z.left(90)
+z.fd(150)
+z.left(180)
 
 z.check()

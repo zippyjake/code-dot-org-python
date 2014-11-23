@@ -17,7 +17,7 @@ def draw_square(length):
         z.turn_right(90)
 
 def draw_triangle(length):
-    for count in range(3):
+    for count in range(2):
         z.move_forward(length)
         z.turn_right(120)
 
@@ -26,8 +26,16 @@ def draw_house(length):
     z.move_forward(length)
     z.turn_right(30)
     draw_triangle(length)
-    # ???
 
-# ???
+draw_house(100)
+z.left(90)
+z.fd(100)
+z.left(180)
+draw_house(150)
+z.left(90)
+z.fd(150)
+z.left(180)
+draw_house(100)
+
 
 z.check()
